@@ -1,32 +1,666 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyMood</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyMood — a private mood journal for iPhone</title>
+<meta name="description" content="MyMood is a private mood journal for iPhone that feels like a real diary. Choose your cover and paper, write your day, tag how you felt, and see the pattern. No account, no ads, stored on your iPhone.">
+<meta name="theme-color" content="#faf6f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14111a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MyMood">
+<meta property="og:title" content="MyMood — a private mood journal for iPhone">
+<meta property="og:description" content="A diary you'd actually want to open. Pick your cover and paper, write your day, tag the mood — and it never leaves your iPhone.">
+<meta property="og:url" content="https://lauromarinho.github.io/mymood-landing/">
+<meta property="og:image" content="https://lauromarinho.github.io/mymood-landing/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MyMood — a private mood journal for iPhone">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://lauromarinho.github.io/mymood-landing/">
+<link rel="icon" href="assets/app-icon.png">
+<link rel="apple-touch-icon" href="assets/app-icon.png">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; max-width:680px; margin:auto; padding:2rem 1rem; line-height:1.6; color:#2f2a35;">
-  <h1>MyMood</h1>
-  <p>MyMood is a private mood journal for recording daily feelings, reflections, reminders and personal notes.</p>
+<body>
 
-  <p>
-    Download on the App Store:
-    <a href="https://apps.apple.com/app/mymood/id6748285756" target="_blank" rel="noopener">
-      https://apps.apple.com/app/mymood/id6748285756
+<!-- ======================================================================
+     Nav
+     ====================================================================== -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="assets/app-icon.png" alt="" width="30" height="30">
+      <span>MyMood</span>
     </a>
-  </p>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#pro">Pro</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn-sm" href="https://apps.apple.com/app/mymood/id6748285756" target="_blank" rel="noopener">Download</a>
+    </div>
+  </div>
+</nav>
 
-  <hr>
-  <h2>Privacy</h2>
-  <p>
-    MyMood is designed to work without an account and stores diary data locally on your device.
-    Read the <a href="privacy.html">Privacy Policy</a>.
-  </p>
+<!-- ======================================================================
+     Hero
+     ====================================================================== -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
 
-  <h2>Support</h2>
-  <p>
-    For questions or support, contact
-    <a href="mailto:marinho.lauroo@gmail.com">marinho.lauroo@gmail.com</a>.
-  </p>
+      <div>
+        <span class="eyebrow"><span class="dot"></span> For iPhone · Free to start · No account</span>
+
+        <h1>A diary you'd actually <em>want</em> to open.</h1>
+
+        <p class="lede">
+          Most mood trackers give you a slider and a blank box. MyMood gives you a
+          <strong>diary</strong> — you choose the cover, the paper and the ruling, then write your
+          day the way you'd write it on the page. The moods, the calendar and the charts come with it.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn appstore" href="https://apps.apple.com/app/mymood/id6748285756" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.1-1.5 2.6-.4 6.5 1.1 8.7.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1.1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.5-.1 0-2.2-.9-2.2-3.3ZM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-.9 2.6 1 .1 2-.5 2.6-1.2Z"/></svg>
+            <span><small>Download on the</small><b>App&nbsp;Store</b></span>
+          </a>
+          <a class="btn ghost" href="#how">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.4 5.6 9l1.4-1.4 5 5 5-5L18.4 9 12 15.4Z"/></svg>
+            See how it works
+          </a>
+        </div>
+
+        <p class="hero-note">Free to use every day. MyMood&nbsp;Pro unlocks the extras — and never hides what you already wrote.</p>
+      </div>
+
+      <div class="hero-shots">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/hero-1.jpg" alt="MyMood — the animated diary cover that opens the app" width="660" height="1435" loading="eager" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>The cover</span><small>hero-1.jpg</small>
+          </div>
+        </div></div>
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/hero-2.jpg" alt="MyMood — the diary, with entries filtered by mood" width="660" height="1435" loading="eager" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>The diary</span><small>hero-2.jpg</small>
+          </div>
+        </div></div>
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/hero-3.jpg" alt="MyMood — mood insight charts for the last 30 days" width="660" height="1435" loading="eager" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>The insights</span><small>hero-3.jpg</small>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ======================================================================
+     Trust strip
+     ====================================================================== -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-row reveal">
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.2 3.7 10.1 9 12 5.3-1.9 9-6.8 9-12V5l-9-4Zm0 10.9h7c-.5 4-3.2 7.7-7 9V12H5V6.3l7-3.1v8.7Z"/></svg>
+        Stays on your iPhone
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2c1.9 0 3.6.7 5 1.8L5.8 17A8 8 0 0 1 12 4Zm0 16c-1.9 0-3.6-.7-5-1.8L18.2 7A8 8 0 0 1 12 20Z"/></svg>
+        No account, ever
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H5v13h14V9h-2V6a5 5 0 0 0-5-5Zm0 2a3 3 0 0 1 3 3v3H9V6a3 3 0 0 1 3-3Zm0 10a2 2 0 0 1 1 3.7V19h-2v-2.3A2 2 0 0 1 12 13Z"/></svg>
+        Face ID lock, free
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 15-5-5 1.4-1.4L11 14.2l6.6-6.6L19 9l-8 8Z"/></svg>
+        No ads or trackers
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Story
+     ====================================================================== -->
+<section>
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="reveal">
+        <p class="kicker">Why it's different</p>
+        <h2>A form is easy to fill in. A diary is easy to keep.</h2>
+        <p>
+          Mood apps ask you to rate your day from one to five, and after two weeks you stop,
+          because nothing you wrote felt like it was <strong>yours</strong>.
+        </p>
+        <p>
+          MyMood starts from the object instead. It opens on a cover you chose. The page you write on
+          has the paper and the ruling you picked. Your entry reads like a page from a journal, not a
+          record in a database — and that small difference is what makes people come back on day thirty.
+        </p>
+      </div>
+      <div class="reveal">
+        <p class="pull">
+          “Everything a mood tracker does — moods, calendar, charts, reminders —
+          wrapped in something that looks like it belongs to you.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Features
+     ====================================================================== -->
+<section id="features">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="kicker">What's inside</p>
+      <h2>Everything you need to keep the habit</h2>
+      <p>Built entirely with native iOS frameworks, so it feels like part of the phone — fast, quiet and offline.</p>
+    </div>
+
+    <div class="features">
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h13a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v11.2c.3-.1.7-.2 1-.2h12V4H6Zm0 14a1 1 0 1 0 0 2h12v-2H6Z"/></svg></div>
+        <h3>Bind your own diary</h3>
+        <p>Four covers in classic and modern, four papers, ornaments and three rulings — including a blank page. The cover you pick is the first thing you see every time you open the app.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 18c-2.3 0-4.3-1.3-5.2-3.2l1.8-.8A3.8 3.8 0 0 0 12 16a3.8 3.8 0 0 0 3.4-2l1.8.8A5.8 5.8 0 0 1 12 18Z"/></svg></div>
+        <h3>Thirteen honest moods</h3>
+        <p>Not a number out of five. Happy, tired, overwhelmed, at peace, frustrated, confident — each with its own soft colour, so a month of entries reads at a glance.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-4 4.9V19h3v2H8v-2h3v-3.1A5 5 0 0 1 7 11h2a3 3 0 0 0 6 0h2Z"/></svg></div>
+        <h3>Write it, or just say it</h3>
+        <p>On the days you'd rather talk than type, dictate the entry and MyMood turns it into text on the page. The words are saved — the audio never is.</p>
+        <span class="tag">Pro</span>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5ZM9 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></div>
+        <h3>One photo, one day</h3>
+        <p>Pin a picture to the entry and the page starts to look like a scrapbook. MyMood only ever sees the photos you pick yourself.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2h10V2h2v2h1a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V2h2ZM4 10v10h16V10H4Zm3 2h4v4H7v-4Z"/></svg></div>
+        <h3>Calendar and reminders</h3>
+        <p>See the month at a glance, tap a day to read it back, and set a nudge for the evening so the habit survives its first week.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h17v2H2V2h2v18Zm3-3V9h3v8H7Zm5 0V4h3v13h-3Zm5 0v-6h3v6h-3Z"/></svg></div>
+        <h3>Charts that actually say something</h3>
+        <p>Seven days, thirty days or your whole history: the trend, how the moods were distributed, and the rhythm of your week — drawn with Swift Charts.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H5v13h14V9h-2V6a5 5 0 0 0-5-5Zm0 2a3 3 0 0 1 3 3v3H9V6a3 3 0 0 1 3-3Zm0 10a2 2 0 0 1 1 3.7V19h-2v-2.3A2 2 0 0 1 12 13Z"/></svg></div>
+        <h3>Locked with your face</h3>
+        <p>Turn on App&nbsp;Lock and the diary asks for Face&nbsp;ID or Touch&nbsp;ID every time it comes back. It's part of the free app, because a private journal has to actually be private.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Zm-1.6 2.3A7 7 0 1 0 18.7 13a9 9 0 0 1-8.3-7.7Z"/></svg></div>
+        <h3>Light, dark, or whatever your phone is doing</h3>
+        <p>Pick the appearance in Settings and the whole diary follows — including the lock screen. Both modes were drawn on purpose, not inherited.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+        <h3>Opens the way you like</h3>
+        <p>Keep the animated cover as your little ritual, shorten it, or skip it entirely and land straight in the diary. Your call, in Diary&nbsp;Style.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Moods
+     ====================================================================== -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="kicker">The vocabulary</p>
+      <h2>Days don't come in five flavours</h2>
+      <p>Every mood carries its own pastel colour through the diary, the calendar and the charts.</p>
+    </div>
+    <div class="moods reveal">
+      <span class="mood" style="--m:#6bb878"><i></i>😄 Happy</span>
+      <span class="mood" style="--m:#6db3a8"><i></i>🙂 Content</span>
+      <span class="mood" style="--m:#9ea3a8"><i></i>😐 Neutral</span>
+      <span class="mood" style="--m:#7d99c7"><i></i>😔 Sad</span>
+      <span class="mood" style="--m:#6bade0"><i></i>😢 Crying</span>
+      <span class="mood" style="--m:#d16d6b"><i></i>😡 Angry</span>
+      <span class="mood" style="--m:#d17aa8"><i></i>🥳 Excited</span>
+      <span class="mood" style="--m:#80bdae"><i></i>😭 Overwhelmed</span>
+      <span class="mood" style="--m:#9987ba"><i></i>😴 Tired</span>
+      <span class="mood" style="--m:#d69461"><i></i>😤 Frustrated</span>
+      <span class="mood" style="--m:#9485c7"><i></i>🤯 Stressed</span>
+      <span class="mood" style="--m:#d1b359"><i></i>😇 At peace</span>
+      <span class="mood" style="--m:#66a1c7"><i></i>😎 Confident</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     How it works
+     ====================================================================== -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="kicker">How it works</p>
+      <h2>Three minutes to set up. Two minutes a day after that.</h2>
+    </div>
+
+    <div class="steps">
+
+      <div class="step reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/step-1.jpg" alt="MyMood — choosing a cover, paper and ruling in Diary Style" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>Diary Style</span><small>step-1.jpg</small>
+          </div>
+        </div></div>
+        <span class="n">1</span>
+        <h3>Bind it</h3>
+        <p>Pick the cover, the paper, the ruling and an ornament. Change your mind whenever you want — nothing you wrote is affected.</p>
+      </div>
+
+      <div class="step reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/step-2.jpg" alt="MyMood — writing a new mood note with a mood, a title and a photo" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>New mood note</span><small>step-2.jpg</small>
+          </div>
+        </div></div>
+        <span class="n">2</span>
+        <h3>Write it</h3>
+        <p>Tap <b>+</b>, choose how the day felt, and write — or dictate. Add a photo if the day deserves one. Then close the app and forget about it.</p>
+      </div>
+
+      <div class="step reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/step-3.jpg" alt="MyMood — the 30-day mood trend and distribution" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>Insights</span><small>step-3.jpg</small>
+          </div>
+        </div></div>
+        <span class="n">3</span>
+        <h3>Read it back</h3>
+        <p>After a couple of weeks the charts start earning their place: what the month looked like, which moods came back, and how your weeks tend to go.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Screens
+     ====================================================================== -->
+<section id="screens" style="padding-top:20px">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="kicker">A closer look</p>
+      <h2>The whole app, screen by screen</h2>
+    </div>
+
+    <div class="gallery">
+
+      <figure class="shot reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/gallery-1.jpg" alt="MyMood — the diary list, filtered by mood" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>The diary</span><small>gallery-1.jpg</small>
+          </div>
+        </div></div>
+        <figcaption><b>Your entries</b>Filter by mood, or scroll back through the whole thing.</figcaption>
+      </figure>
+
+      <figure class="shot reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/gallery-2.jpg" alt="MyMood — a finished journal entry with a photo" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>Entry page</span><small>gallery-2.jpg</small>
+          </div>
+        </div></div>
+        <figcaption><b>The finished page</b>Your paper, your ruling, your handwriting-shaped layout.</figcaption>
+      </figure>
+
+      <figure class="shot reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/gallery-3.jpg" alt="MyMood — the calendar with the day's agenda" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>Calendar</span><small>gallery-3.jpg</small>
+          </div>
+        </div></div>
+        <figcaption><b>Month view</b>Every day you wrote, plus the reminders you set.</figcaption>
+      </figure>
+
+      <figure class="shot reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/gallery-4.jpg" alt="MyMood — the mood distribution and weekly rhythm cards" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>Insights</span><small>gallery-4.jpg</small>
+          </div>
+        </div></div>
+        <figcaption><b>Trend and distribution</b>Seven days, thirty days, or everything you've written.</figcaption>
+      </figure>
+
+      <figure class="shot reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/gallery-5.jpg" alt="MyMood — Diary Style, with covers, papers, ornaments and rulings" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>Diary Style</span><small>gallery-5.jpg</small>
+          </div>
+        </div></div>
+        <figcaption><b>Make it yours</b>Covers, papers, ornaments and rulings, in classic or modern.</figcaption>
+      </figure>
+
+      <figure class="shot reveal">
+        <div class="phone"><div class="screen">
+          <img src="assets/screens/gallery-6.jpg" alt="MyMood — App Lock and appearance settings" width="660" height="1435" loading="lazy" decoding="async">
+          <div class="ph">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z"/></svg>
+            <span>Settings</span><small>gallery-6.jpg</small>
+          </div>
+        </div></div>
+        <figcaption><b>Settings</b>App&nbsp;Lock, appearance, and one button that deletes everything.</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Privacy
+     ====================================================================== -->
+<section class="band-privacy" id="privacy">
+  <div class="wrap">
+    <div class="privacy-grid">
+      <div class="reveal">
+        <p class="kicker">Privacy</p>
+        <h2 style="font-size:clamp(28px,4.2vw,42px)">A diary nobody else can read. Including us.</h2>
+        <p style="color:var(--ink-soft);font-size:18px">
+          MyMood has no sign-up screen because it has no server. There is no account to create,
+          nothing to sync and nobody on the other end. What you write lives in the app's private
+          storage on your iPhone, and that's the end of the story.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="privacy.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.2 3.7 10.1 9 12 5.3-1.9 9-6.8 9-12V5l-9-4Z"/></svg>
+            Read the privacy policy
+          </a>
+        </div>
+      </div>
+
+      <ul class="privacy-list reveal">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 15-5-5 1.4-1.4L11 14.2l6.6-6.6L19 9l-8 8Z"/></svg>
+          <span><b>No account and no cloud.</b> Entries, photos, reminders and settings are stored locally on your device.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 15-5-5 1.4-1.4L11 14.2l6.6-6.6L19 9l-8 8Z"/></svg>
+          <span><b>No ads, no third-party analytics, no tracking.</b> There is no SDK in MyMood watching what you do.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 15-5-5 1.4-1.4L11 14.2l6.6-6.6L19 9l-8 8Z"/></svg>
+          <span><b>App&nbsp;Lock uses your device's own authentication.</b> Face&nbsp;ID, Touch&nbsp;ID or your passcode — MyMood never receives your biometric data.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 15-5-5 1.4-1.4L11 14.2l6.6-6.6L19 9l-8 8Z"/></svg>
+          <span><b>Photos only when you choose them.</b> MyMood uses Apple's system picker, so it never sees your library.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 15-5-5 1.4-1.4L11 14.2l6.6-6.6L19 9l-8 8Z"/></svg>
+          <span><b>Dictation saves the words, not your voice.</b> The transcript goes into your entry; no audio recording is kept.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 15-5-5 1.4-1.4L11 14.2l6.6-6.6L19 9l-8 8Z"/></svg>
+          <span><b>You can erase everything.</b> One option in Settings deletes your whole diary from the device.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Pro
+     ====================================================================== -->
+<section id="pro">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="kicker">MyMood Pro</p>
+      <h2>Free is a real app. Pro is the deep end.</h2>
+      <p>Writing your diary is free and always will be — text entries are never rationed.
+         Pro unlocks the extras, and if it ever lapses, nothing you already wrote is hidden from you.</p>
+    </div>
+
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Free</h3>
+        <p class="price">€0<span> / forever</span></p>
+        <p class="price-note">No account, no trial countdown.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Unlimited written entries with mood, title and date</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>A photo on up to 10 notes</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Up to 3 reminders at a time</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Calendar, plus 7-day and 30-day insights</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Face&nbsp;ID / Touch&nbsp;ID App&nbsp;Lock and your full history</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>One cover, one paper and one ruling</li>
+        </ul>
+      </div>
+
+      <!-- PRICE: confirm against App Store Connect before publishing. Local pricing
+           always wins — the app shows the real price for the reader's region. -->
+      <div class="plan featured reveal">
+        <span class="badge">Best value</span>
+        <h3>MyMood Pro</h3>
+        <p class="price">€9.99<span> / year</span></p>
+        <p class="price-note">or €1.99 a month · prices shown in your local currency in&nbsp;the&nbsp;app</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Everything in Free</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Voice notes with on-device dictation</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>A photo on every note</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Unlimited reminders</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>All-time insights and the weekly rhythm card</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Every cover, paper, ornament and ruling</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>Whatever comes next, included</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="table-scroll reveal">
+      <table class="compare">
+        <caption class="sr-only">Feature comparison between MyMood Free and MyMood Pro</caption>
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Written diary entries</th><td>Unlimited</td><td class="yes">Unlimited</td></tr>
+          <tr><th scope="row">Voice notes</th><td>—</td><td class="yes">Included</td></tr>
+          <tr><th scope="row">Photos</th><td>On up to 10 notes</td><td class="yes">On every note</td></tr>
+          <tr><th scope="row">Reminders</th><td>3 at a time</td><td class="yes">Unlimited</td></tr>
+          <tr><th scope="row">Insights</th><td>7 and 30 days</td><td class="yes">All time + weekly rhythm</td></tr>
+          <tr><th scope="row">Diary Style</th><td>1 cover, 1 paper, 1 ruling</td><td class="yes">Everything, plus ornaments</td></tr>
+          <tr><th scope="row">App&nbsp;Lock and full history</th><td>Included</td><td class="yes">Included</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center;color:var(--ink-faint);font-size:14.5px;margin-top:18px">
+      Limits are counts, not monthly quotas — deleting a reminder frees its slot, and swapping the photo
+      on a note you already illustrated doesn't use a new one.
+    </p>
+  </div>
+</section>
+
+<!-- ======================================================================
+     FAQ
+     ====================================================================== -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="kicker">Questions</p>
+      <h2>Before you download</h2>
+    </div>
+
+    <div class="faq reveal">
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No. MyMood opens straight into your diary — there is no sign-up, no email and no password,
+           because there is no server on the other side.</p>
+      </details>
+      <details>
+        <summary>Where is my diary stored?</summary>
+        <p>In the app's private storage on your iPhone. MyMood doesn't upload it anywhere, which also
+           means that if you delete the app, the diary goes with it. Keep an iPhone or iCloud device
+           backup if you want a safety net.</p>
+      </details>
+      <details>
+        <summary>Which iPhones does it run on?</summary>
+        <p>MyMood 2.0 requires iOS 17.6 or later and is built for iPhone, in portrait.
+           It isn't optimised for iPad in this version.</p>
+      </details>
+      <details>
+        <summary>Does dictation record my voice?</summary>
+        <p>No. Speech recognition converts what you say into text, MyMood saves that text into your
+           entry, and no audio file is kept. You can revoke microphone and speech access at any time
+           in the iOS Settings app.</p>
+      </details>
+      <details>
+        <summary>What happens to my entries if Pro expires?</summary>
+        <p>Nothing is hidden. Everything you already wrote — including photos, voice-dictated notes and
+           premium covers you had applied — stays readable. You simply stop being able to add new items
+           beyond the free limits.</p>
+      </details>
+      <details>
+        <summary>How do I cancel the subscription?</summary>
+        <p>Through Apple, like any App Store subscription: iOS Settings → your name → Subscriptions,
+           or tap <b>Manage Subscription</b> inside MyMood. Cancelling stops the renewal; you keep Pro
+           until the end of the paid period.</p>
+      </details>
+      <details>
+        <summary>I changed phones — can I restore Pro?</summary>
+        <p>Yes. Open the Pro screen and tap <b>Restore Purchases</b> while signed in with the same Apple
+           Account you bought it with. Your diary itself does not travel with the subscription, so
+           restore it from your device backup.</p>
+      </details>
+      <details>
+        <summary>Can I delete everything?</summary>
+        <p>Yes — there's an option in Settings that erases your whole diary from the device. Because
+           MyMood has no account and no server copy, that deletion is final and we can't undo it for you.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Final CTA
+     ====================================================================== -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta reveal">
+      <img class="icon" src="assets/app-icon.png" alt="The MyMood app icon" width="76" height="76">
+      <h2>Start today's page.</h2>
+      <p>Free on the App&nbsp;Store, no account required. Pick a cover, write one honest sentence,
+         and see how the month reads a few weeks from now.</p>
+      <div class="hero-actions">
+        <a class="btn appstore" href="https://apps.apple.com/app/mymood/id6748285756" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.1-1.5 2.6-.4 6.5 1.1 8.7.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1.1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.5-.1 0-2.2-.9-2.2-3.3ZM14.2 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-.9 2.6 1 .1 2-.5 2.6-1.2Z"/></svg>
+          <span><small>Download on the</small><b>App&nbsp;Store</b></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     Footer
+     ====================================================================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top">
+          <img src="assets/app-icon.png" alt="" width="30" height="30">
+          <span>MyMood</span>
+        </a>
+        <p style="margin:12px 0 0;max-width:32em">A private mood journal for iPhone,
+           designed and built by one developer.</p>
+      </div>
+      <div class="foot-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+        <a href="https://apps.apple.com/app/mymood/id6748285756" target="_blank" rel="noopener">App Store</a>
+        <a href="https://lauromarinho.github.io" target="_blank" rel="noopener">About the developer</a>
+      </div>
+    </div>
+    <p class="foot-note">
+      © <span id="year">2026</span> Lauro Marinho · Braga, Portugal ·
+      <a href="mailto:marinho.lauroo@gmail.com">marinho.lauroo@gmail.com</a><br>
+      Apple, the Apple logo, iPhone, Face&nbsp;ID, Touch&nbsp;ID and App&nbsp;Store are trademarks of Apple&nbsp;Inc.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Reveal a screenshot as soon as the file exists; otherwise keep the placeholder.
+  document.querySelectorAll('.phone .screen img').forEach(function (img) {
+    var reveal = function () {
+      if (img.naturalWidth > 0) img.closest('.phone').classList.add('has-shot');
+    };
+    if (img.complete) reveal();
+    img.addEventListener('load', reveal);
+  });
+
+  // Nav hairline once scrolled.
+  var nav = document.getElementById('nav');
+  var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 8); };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Reveal on scroll.
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
